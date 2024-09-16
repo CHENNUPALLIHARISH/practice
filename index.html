@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" id="details" name="details">
+        <h3>About You</h3>
+        <label for="User name">Your Name* </label> <input type="text" name="uname" id="uname" placeholder="enter your name"  required>
+        <br><br>
+        <label for="email">Your Email </label> <input type="email" name="email_id" id="email_id" placeholder="enter your email">
+        <br><br>
+        <label for="dob">Your Birth date </label> <input type="date" name="dob" id="dob" min="2004-01-01" max="2024-12-31">
+        <br><br>
+        <fieldset>
+            <legend>Select your gender</legend>
+            <input type="radio" name="g" id="g" checked><label for="gender" >Male</label><br>
+            <input type="radio" name="g" id="g"><label for="gender">Female</label>
+        </fieldset>
+        <br><br>
+        <label for="office">Select which city you are from</label>
+        <select name="office"  size="any">
+            <optgroup label="south-india">
+                <option value="chennai">chennai</option>
+                <option value="banglore">banglore</option>
+                <option value="hyderabad">hyderabad</option>
+                <option value="goa">goa</option>
+                <option value="thrivandrum">thrivandrum</option>
+            </optgroup>
+            <optgroup label="north-india">
+                <option value="mumbai">mumbai</option>
+                <option value="pune">pune</option>
+                <option value="nagpur">nagpur</option>
+                <option value="nashik">nashik</option>
+                <option value="aurangabad">aurangabad</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for="resume">upload resume</label>
+        <input type="file" name="r" id="r" accept=".pdf" >
+        <br><br>
+        <label for="about">Tell us about yourself</label><br><br>
+        <textarea id="about" name="about"></textarea>
+        <br><br>
+
+        <input type="submit">
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
